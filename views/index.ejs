@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Weather</title>
+    <link rel= "stylesheet" type= "text/css" href= "../public/stylesheets/css/weather-icons-wind.css">
+    <link rel= "stylesheet" type= "text/css" href= "../public/stylesheets/css/weather.css">
+    <link rel= "stylesheet" type= "text/css" href= "../public/stylesheets/css/weather-icons.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel= "stylesheet" type= "text/css" href= "../public/stylesheets/css/styles.css">
+
+  </head>
+  <body>
+
+    <div id="weather-card">
+
+      <h2>Weather Forecast </h2>
+
+      <div class="weather-container">
+      <h1><%= location.city %></h1>
+
+      <span class="weather-icon">
+
+        <span class="weather-degrees"><%= weather_info.temperature %>&deg;</span>
+
+
+          <%if(weather_icon == "clear-day") { %>
+            <i class="wi wi-day-sunny"></i>
+          <%} else if (weather_icon == "clear-night") {%>
+            <i class="wi wi-night-clear"></i>
+          <%} else if (weather_icon == "rain") {%>
+              <i class="wi wi-rain"></i>
+          <%} else if (weather_icon == "snow"){%>
+              <i class="wi wi-snow"></i>
+          <%} else if (weather_icon == "sleet"){%>
+              <i class="wi wi-sleet"></i>
+          <%} else if (weather_icon == "wind"){%>
+              <i class="wi wi-wind"></i>
+          <%} else if (weather_icon == "fog"){%>
+              <i class="wi wi-fog"></i>
+          <%} else if (weather_icon == "cloudy"){%>
+              <i class="wi wi-cloudy"></i>
+          <%} else if (weather_icon == "partly-cloudy-day"){%>
+              <i class="wi wi-forecast-io-partly-cloudy-day"></i>
+          
+          <%} else {%>
+              <i class="wi wi-day-sunny"></i>
+
+          <% } %>
+        </span>
+        
+        <p>
+          Right now it is <%= weather_info.temperature %>&deg;
+        </p>
+  </div>
+</div>
+<br>
+</body>
+</html>

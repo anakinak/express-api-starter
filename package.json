@@ -1,0 +1,35 @@
+{
+  "name": "weather-newscorp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./server.js",
+    "test": "mocha tests/index.js"
+  },
+  "keywords": [
+    "weather"
+  ],
+  "author": "ankurkachru@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "all-the-cities": "^2.0.1",
+    "cookie-parser": "~1.4.3",
+    "dark-sky-api": "^0.6.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "glob": "^7.1.2",
+    "helmet": "^3.12.1",
+    "http-errors": "~1.6.2",
+    "moment": "^2.22.2",
+    "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-google": "^0.9.1",
+    "expect": "^23.1.0",
+    "mocha": "^5.2.0",
+    "supertest": "^3.1.0"
+  }
+}
