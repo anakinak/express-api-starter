@@ -1,7 +1,7 @@
 ## Weather Forecast App
 
 To run app:
-`npm start`
+`npm i && npm start`
 
 You could also use something like forever, to automatically restart your app in case of a crash
 ```bash
